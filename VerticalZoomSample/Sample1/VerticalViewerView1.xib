@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerticalViewerView1" customModule="VerticalZoomSample" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="qvD-PL-opF" id="DDD-bM-mpn"/>
+                <outlet property="scrollView" destination="PG5-ZW-hUk" id="Fhf-US-g7r"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" maximumZoomScale="4" id="PG5-ZW-hUk">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qvD-PL-opF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="y2j-96-OvN">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="A8R-ak-aRV"/>
+                        <outlet property="delegate" destination="-1" id="eNO-V9-shN"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="qvD-PL-opF" firstAttribute="top" secondItem="PG5-ZW-hUk" secondAttribute="top" id="F1J-x4-a6G"/>
+                <constraint firstItem="qvD-PL-opF" firstAttribute="leading" secondItem="PG5-ZW-hUk" secondAttribute="leading" id="GVi-VG-WIp"/>
+                <constraint firstItem="qvD-PL-opF" firstAttribute="centerY" secondItem="PG5-ZW-hUk" secondAttribute="centerY" id="Sxc-fx-xdp"/>
+                <constraint firstAttribute="bottom" secondItem="qvD-PL-opF" secondAttribute="bottom" id="hJX-o4-62k"/>
+                <constraint firstAttribute="trailing" secondItem="qvD-PL-opF" secondAttribute="trailing" id="oY1-BI-9U9"/>
+                <constraint firstItem="qvD-PL-opF" firstAttribute="centerX" secondItem="PG5-ZW-hUk" secondAttribute="centerX" id="zlQ-SK-0te"/>
+            </constraints>
+            <connections>
+                <outlet property="delegate" destination="-1" id="XsP-kg-3z8"/>
+            </connections>
+            <point key="canvasLocation" x="-251" y="-110"/>
+        </scrollView>
+    </objects>
+</document>

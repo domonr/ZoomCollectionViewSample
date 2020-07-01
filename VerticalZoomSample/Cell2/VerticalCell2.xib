@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerticalCell2" customModule="VerticalZoomSample">
+            <connections>
+                <outlet property="scrollView" destination="VMT-Th-8DL" id="X5l-kE-fQ0"/>
+                <outlet property="stackView" destination="faA-kk-bmm" id="eUU-vT-Z2u"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="VMT-Th-8DL">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="667" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="faA-kk-bmm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="faA-kk-bmm" secondAttribute="trailing" id="6Kb-b0-ubd"/>
+                <constraint firstItem="faA-kk-bmm" firstAttribute="leading" secondItem="VMT-Th-8DL" secondAttribute="leading" id="Vm2-F7-ZZd"/>
+                <constraint firstAttribute="bottom" secondItem="faA-kk-bmm" secondAttribute="bottom" id="WRE-8y-gbx"/>
+                <constraint firstItem="faA-kk-bmm" firstAttribute="centerX" secondItem="VMT-Th-8DL" secondAttribute="centerX" id="bVk-yR-TRM"/>
+                <constraint firstItem="faA-kk-bmm" firstAttribute="top" secondItem="VMT-Th-8DL" secondAttribute="top" id="cEP-mi-AZC"/>
+                <constraint firstItem="faA-kk-bmm" firstAttribute="centerY" secondItem="VMT-Th-8DL" secondAttribute="centerY" id="xXy-5a-fca"/>
+            </constraints>
+            <point key="canvasLocation" x="54" y="399"/>
+        </scrollView>
+    </objects>
+</document>

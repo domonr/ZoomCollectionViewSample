@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		252F475E24A9CBFA006A3C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252F475D24A9CBFA006A3C5B /* AppDelegate.swift */; };
+		252F476024A9CBFA006A3C5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252F475F24A9CBFA006A3C5B /* SceneDelegate.swift */; };
+		252F476224A9CBFA006A3C5B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252F476124A9CBFA006A3C5B /* MainViewController.swift */; };
+		252F476724A9CBFB006A3C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252F476624A9CBFB006A3C5B /* Assets.xcassets */; };
+		252F476A24A9CBFB006A3C5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252F476824A9CBFB006A3C5B /* LaunchScreen.storyboard */; };
+		252F477224A9CCB1006A3C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252F477124A9CC9D006A3C5B /* Main.storyboard */; };
+		252F479024A9CE9C006A3C5B /* VerticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252F478F24A9CE9C006A3C5B /* VerticalViewController.swift */; };
+		252F479C24A9E2CE006A3C5B /* VerticalViewerView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252F479B24A9E2CE006A3C5B /* VerticalViewerView1.swift */; };
+		252F479F24A9E7B8006A3C5B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252F479E24A9E7B8006A3C5B /* BaseView.swift */; };
+		252F47A124A9E7BE006A3C5B /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252F47A024A9E7BE006A3C5B /* UIView+.swift */; };
+		252F47A324AA0412006A3C5B /* VerticalViewerView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 252F47A224AA0412006A3C5B /* VerticalViewerView1.xib */; };
+		252F47A824AA0D78006A3C5B /* VerticalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252F47A624AA0D78006A3C5B /* VerticalCell.swift */; };
+		252F47A924AA0D78006A3C5B /* VerticalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 252F47A724AA0D78006A3C5B /* VerticalCell.xib */; };
+		252F47AB24AA0F3C006A3C5B /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252F47AA24AA0F3B006A3C5B /* BaseCollectionViewCell.swift */; };
+		252F47AD24AA108E006A3C5B /* UICollectionViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252F47AC24AA108E006A3C5B /* UICollectionViewCell+.swift */; };
+		25E3C87324AB09BD007BC6A1 /* VerticalViewerView3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25E3C87124AB09BC007BC6A1 /* VerticalViewerView3.xib */; };
+		25E3C87424AB09BD007BC6A1 /* VerticalViewerView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E3C87224AB09BC007BC6A1 /* VerticalViewerView3.swift */; };
+		25E3C87824AB0E60007BC6A1 /* VerticalViewerView4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25E3C87624AB0E60007BC6A1 /* VerticalViewerView4.xib */; };
+		25E3C87924AB0E60007BC6A1 /* VerticalViewerView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E3C87724AB0E60007BC6A1 /* VerticalViewerView4.swift */; };
+		25E3C87D24AB103B007BC6A1 /* VerticalViewerView5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25E3C87B24AB103B007BC6A1 /* VerticalViewerView5.xib */; };
+		25E3C87E24AB103B007BC6A1 /* VerticalViewerView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E3C87C24AB103B007BC6A1 /* VerticalViewerView5.swift */; };
+		25E3C88224AB190A007BC6A1 /* VerticalCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E3C88024AB17BC007BC6A1 /* VerticalCell2.swift */; };
+		25E3C88324AB190A007BC6A1 /* VerticalCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25E3C88124AB17BD007BC6A1 /* VerticalCell2.xib */; };
+		25E3C88A24AB3276007BC6A1 /* VerticalViewerView6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25E3C88824AB3276007BC6A1 /* VerticalViewerView6.xib */; };
+		25E3C88B24AB3276007BC6A1 /* VerticalViewerView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E3C88924AB3276007BC6A1 /* VerticalViewerView6.swift */; };
+		25E3C89124AB3AD0007BC6A1 /* ScalingLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E3C88D24AB3ACD007BC6A1 /* ScalingLayoutProtocol.swift */; };
+		25E3C89224AB3AD0007BC6A1 /* ScalingGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E3C88E24AB3ACE007BC6A1 /* ScalingGridLayout.swift */; };
+		25E3C89324AB3AD0007BC6A1 /* ZoomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E3C88F24AB3ACF007BC6A1 /* ZoomCollectionView.swift */; };
+		25E3C89424AB3AD0007BC6A1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E3C89024AB3AD0007BC6A1 /* Extensions.swift */; };
+		25E3C89824AB3B28007BC6A1 /* VerticalViewerView7.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25E3C89624AB3B28007BC6A1 /* VerticalViewerView7.xib */; };
+		25E3C89924AB3B28007BC6A1 /* VerticalViewerView7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E3C89724AB3B28007BC6A1 /* VerticalViewerView7.swift */; };
+		25E3C89C24AB3B54007BC6A1 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E3C89B24AB3B54007BC6A1 /* CustomLayout.swift */; };
+		25F2B15124AAFE56007D1199 /* VerticalViewerView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F2B14C24AAFE2E007D1199 /* VerticalViewerView2.swift */; };
+		25F2B15224AAFE56007D1199 /* VerticalViewerView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25F2B14B24AAFE2D007D1199 /* VerticalViewerView2.xib */; };
+		25F2B15424AB0679007D1199 /* UIScreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F2B15324AB0679007D1199 /* UIScreen+.swift */; };
+		CFDDD47AF178F1F21A9F28A7 /* Pods_VerticalZoomSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9DFE6AC5EEBBF57AEF89D7 /* Pods_VerticalZoomSample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		252F475A24A9CBFA006A3C5B /* VerticalZoomSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerticalZoomSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		252F475D24A9CBFA006A3C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		252F475F24A9CBFA006A3C5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		252F476124A9CBFA006A3C5B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		252F476624A9CBFB006A3C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		252F476924A9CBFB006A3C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		252F476B24A9CBFB006A3C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		252F477124A9CC9D006A3C5B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		252F478F24A9CE9C006A3C5B /* VerticalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalViewController.swift; sourceTree = "<group>"; };
+		252F479B24A9E2CE006A3C5B /* VerticalViewerView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalViewerView1.swift; sourceTree = "<group>"; };
+		252F479E24A9E7B8006A3C5B /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		252F47A024A9E7BE006A3C5B /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		252F47A224AA0412006A3C5B /* VerticalViewerView1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerticalViewerView1.xib; sourceTree = "<group>"; };
+		252F47A624AA0D78006A3C5B /* VerticalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCell.swift; sourceTree = "<group>"; };
+		252F47A724AA0D78006A3C5B /* VerticalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerticalCell.xib; sourceTree = "<group>"; };
+		252F47AA24AA0F3B006A3C5B /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		252F47AC24AA108E006A3C5B /* UICollectionViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+.swift"; sourceTree = "<group>"; };
+		25E3C87124AB09BC007BC6A1 /* VerticalViewerView3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerticalViewerView3.xib; sourceTree = "<group>"; };
+		25E3C87224AB09BC007BC6A1 /* VerticalViewerView3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalViewerView3.swift; sourceTree = "<group>"; };
+		25E3C87624AB0E60007BC6A1 /* VerticalViewerView4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerticalViewerView4.xib; sourceTree = "<group>"; };
+		25E3C87724AB0E60007BC6A1 /* VerticalViewerView4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalViewerView4.swift; sourceTree = "<group>"; };
+		25E3C87B24AB103B007BC6A1 /* VerticalViewerView5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerticalViewerView5.xib; sourceTree = "<group>"; };
+		25E3C87C24AB103B007BC6A1 /* VerticalViewerView5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalViewerView5.swift; sourceTree = "<group>"; };
+		25E3C88024AB17BC007BC6A1 /* VerticalCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCell2.swift; sourceTree = "<group>"; };
+		25E3C88124AB17BD007BC6A1 /* VerticalCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerticalCell2.xib; sourceTree = "<group>"; };
+		25E3C88824AB3276007BC6A1 /* VerticalViewerView6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerticalViewerView6.xib; sourceTree = "<group>"; };
+		25E3C88924AB3276007BC6A1 /* VerticalViewerView6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalViewerView6.swift; sourceTree = "<group>"; };
+		25E3C88D24AB3ACD007BC6A1 /* ScalingLayoutProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalingLayoutProtocol.swift; sourceTree = "<group>"; };
+		25E3C88E24AB3ACE007BC6A1 /* ScalingGridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalingGridLayout.swift; sourceTree = "<group>"; };
+		25E3C88F24AB3ACF007BC6A1 /* ZoomCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomCollectionView.swift; sourceTree = "<group>"; };
+		25E3C89024AB3AD0007BC6A1 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		25E3C89624AB3B28007BC6A1 /* VerticalViewerView7.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerticalViewerView7.xib; sourceTree = "<group>"; };
+		25E3C89724AB3B28007BC6A1 /* VerticalViewerView7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalViewerView7.swift; sourceTree = "<group>"; };
+		25E3C89B24AB3B54007BC6A1 /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
+		25F2B14B24AAFE2D007D1199 /* VerticalViewerView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerticalViewerView2.xib; sourceTree = "<group>"; };
+		25F2B14C24AAFE2E007D1199 /* VerticalViewerView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalViewerView2.swift; sourceTree = "<group>"; };
+		25F2B15324AB0679007D1199 /* UIScreen+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+.swift"; sourceTree = "<group>"; };
+		6B6163C3BC9391261FC9F730 /* Pods-VerticalZoomSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerticalZoomSample.release.xcconfig"; path = "Target Support Files/Pods-VerticalZoomSample/Pods-VerticalZoomSample.release.xcconfig"; sourceTree = "<group>"; };
+		AFFAF416F9148E51342DDCE6 /* Pods-VerticalZoomSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerticalZoomSample.debug.xcconfig"; path = "Target Support Files/Pods-VerticalZoomSample/Pods-VerticalZoomSample.debug.xcconfig"; sourceTree = "<group>"; };
+		DB9DFE6AC5EEBBF57AEF89D7 /* Pods_VerticalZoomSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerticalZoomSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		252F475724A9CBFA006A3C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDDD47AF178F1F21A9F28A7 /* Pods_VerticalZoomSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		252F475124A9CBFA006A3C5B = {
+			isa = PBXGroup;
+			children = (
+				252F475C24A9CBFA006A3C5B /* VerticalZoomSample */,
+				252F475B24A9CBFA006A3C5B /* Products */,
+				5AAD1709E80779A2691CF4B4 /* Pods */,
+				EAC9EB60BDA22ADD319C6B2B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		252F475B24A9CBFA006A3C5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				252F475A24A9CBFA006A3C5B /* VerticalZoomSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		252F475C24A9CBFA006A3C5B /* VerticalZoomSample */ = {
+			isa = PBXGroup;
+			children = (
+				25E3C89524AB3B28007BC6A1 /* Sample7 */,
+				25E3C88724AB3276007BC6A1 /* Sample6 */,
+				25E3C87A24AB103B007BC6A1 /* Sample5 */,
+				25E3C87524AB0E60007BC6A1 /* Sample4 */,
+				25E3C87024AB09BC007BC6A1 /* Sample3 */,
+				25F2B14924AAFE22007D1199 /* Sample2 */,
+				252F47A424AA0419006A3C5B /* Sample1 */,
+				25E3C87F24AB17B4007BC6A1 /* Cell2 */,
+				252F47A524AA0CC0006A3C5B /* Cell */,
+				252F479D24A9E7A2006A3C5B /* Util */,
+				252F475D24A9CBFA006A3C5B /* AppDelegate.swift */,
+				252F475F24A9CBFA006A3C5B /* SceneDelegate.swift */,
+				252F478F24A9CE9C006A3C5B /* VerticalViewController.swift */,
+				252F476124A9CBFA006A3C5B /* MainViewController.swift */,
+				252F477124A9CC9D006A3C5B /* Main.storyboard */,
+				252F476624A9CBFB006A3C5B /* Assets.xcassets */,
+				252F476824A9CBFB006A3C5B /* LaunchScreen.storyboard */,
+				252F476B24A9CBFB006A3C5B /* Info.plist */,
+			);
+			path = VerticalZoomSample;
+			sourceTree = "<group>";
+		};
+		252F479D24A9E7A2006A3C5B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				25E3C88C24AB3AA6007BC6A1 /* ZoomCollectionView */,
+				25F2B15324AB0679007D1199 /* UIScreen+.swift */,
+				252F479E24A9E7B8006A3C5B /* BaseView.swift */,
+				252F47AA24AA0F3B006A3C5B /* BaseCollectionViewCell.swift */,
+				252F47A024A9E7BE006A3C5B /* UIView+.swift */,
+				252F47AC24AA108E006A3C5B /* UICollectionViewCell+.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		252F47A424AA0419006A3C5B /* Sample1 */ = {
+			isa = PBXGroup;
+			children = (
+				252F479B24A9E2CE006A3C5B /* VerticalViewerView1.swift */,
+				252F47A224AA0412006A3C5B /* VerticalViewerView1.xib */,
+			);
+			path = Sample1;
+			sourceTree = "<group>";
+		};
+		252F47A524AA0CC0006A3C5B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				252F47A624AA0D78006A3C5B /* VerticalCell.swift */,
+				252F47A724AA0D78006A3C5B /* VerticalCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		25E3C87024AB09BC007BC6A1 /* Sample3 */ = {
+			isa = PBXGroup;
+			children = (
+				25E3C87124AB09BC007BC6A1 /* VerticalViewerView3.xib */,
+				25E3C87224AB09BC007BC6A1 /* VerticalViewerView3.swift */,
+			);
+			path = Sample3;
+			sourceTree = "<group>";
+		};
+		25E3C87524AB0E60007BC6A1 /* Sample4 */ = {
+			isa = PBXGroup;
+			children = (
+				25E3C87624AB0E60007BC6A1 /* VerticalViewerView4.xib */,
+				25E3C87724AB0E60007BC6A1 /* VerticalViewerView4.swift */,
+			);
+			path = Sample4;
+			sourceTree = "<group>";
+		};
+		25E3C87A24AB103B007BC6A1 /* Sample5 */ = {
+			isa = PBXGroup;
+			children = (
+				25E3C87B24AB103B007BC6A1 /* VerticalViewerView5.xib */,
+				25E3C87C24AB103B007BC6A1 /* VerticalViewerView5.swift */,
+			);
+			path = Sample5;
+			sourceTree = "<group>";
+		};
+		25E3C87F24AB17B4007BC6A1 /* Cell2 */ = {
+			isa = PBXGroup;
+			children = (
+				25E3C88024AB17BC007BC6A1 /* VerticalCell2.swift */,
+				25E3C88124AB17BD007BC6A1 /* VerticalCell2.xib */,
+			);
+			path = Cell2;
+			sourceTree = "<group>";
+		};
+		25E3C88724AB3276007BC6A1 /* Sample6 */ = {
+			isa = PBXGroup;
+			children = (
+				25E3C88824AB3276007BC6A1 /* VerticalViewerView6.xib */,
+				25E3C88924AB3276007BC6A1 /* VerticalViewerView6.swift */,
+			);
+			path = Sample6;
+			sourceTree = "<group>";
+		};
+		25E3C88C24AB3AA6007BC6A1 /* ZoomCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				25E3C89024AB3AD0007BC6A1 /* Extensions.swift */,
+				25E3C88E24AB3ACE007BC6A1 /* ScalingGridLayout.swift */,
+				25E3C88D24AB3ACD007BC6A1 /* ScalingLayoutProtocol.swift */,
+				25E3C88F24AB3ACF007BC6A1 /* ZoomCollectionView.swift */,
+			);
+			path = ZoomCollectionView;
+			sourceTree = "<group>";
+		};
+		25E3C89524AB3B28007BC6A1 /* Sample7 */ = {
+			isa = PBXGroup;
+			children = (
+				25E3C89A24AB3B49007BC6A1 /* CustomLayout */,
+				25E3C89624AB3B28007BC6A1 /* VerticalViewerView7.xib */,
+				25E3C89724AB3B28007BC6A1 /* VerticalViewerView7.swift */,
+			);
+			path = Sample7;
+			sourceTree = "<group>";
+		};
+		25E3C89A24AB3B49007BC6A1 /* CustomLayout */ = {
+			isa = PBXGroup;
+			children = (
+				25E3C89B24AB3B54007BC6A1 /* CustomLayout.swift */,
+			);
+			path = CustomLayout;
+			sourceTree = "<group>";
+		};
+		25F2B14924AAFE22007D1199 /* Sample2 */ = {
+			isa = PBXGroup;
+			children = (
+				25F2B14C24AAFE2E007D1199 /* VerticalViewerView2.swift */,
+				25F2B14B24AAFE2D007D1199 /* VerticalViewerView2.xib */,
+			);
+			path = Sample2;
+			sourceTree = "<group>";
+		};
+		5AAD1709E80779A2691CF4B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFFAF416F9148E51342DDCE6 /* Pods-VerticalZoomSample.debug.xcconfig */,
+				6B6163C3BC9391261FC9F730 /* Pods-VerticalZoomSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EAC9EB60BDA22ADD319C6B2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB9DFE6AC5EEBBF57AEF89D7 /* Pods_VerticalZoomSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		252F475924A9CBFA006A3C5B /* VerticalZoomSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 252F476E24A9CBFB006A3C5B /* Build configuration list for PBXNativeTarget "VerticalZoomSample" */;
+			buildPhases = (
+				76181ECB5322C701619B04B4 /* [CP] Check Pods Manifest.lock */,
+				252F475624A9CBFA006A3C5B /* Sources */,
+				252F475724A9CBFA006A3C5B /* Frameworks */,
+				252F475824A9CBFA006A3C5B /* Resources */,
+				C8013B388883DC79EB2CE958 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VerticalZoomSample;
+			productName = VerticalZoomSample;
+			productReference = 252F475A24A9CBFA006A3C5B /* VerticalZoomSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		252F475224A9CBFA006A3C5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Domon;
+				TargetAttributes = {
+					252F475924A9CBFA006A3C5B = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 252F475524A9CBFA006A3C5B /* Build configuration list for PBXProject "VerticalZoomSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 252F475124A9CBFA006A3C5B;
+			productRefGroup = 252F475B24A9CBFA006A3C5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				252F475924A9CBFA006A3C5B /* VerticalZoomSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		252F475824A9CBFA006A3C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25E3C88A24AB3276007BC6A1 /* VerticalViewerView6.xib in Resources */,
+				252F477224A9CCB1006A3C5B /* Main.storyboard in Resources */,
+				25E3C89824AB3B28007BC6A1 /* VerticalViewerView7.xib in Resources */,
+				252F476A24A9CBFB006A3C5B /* LaunchScreen.storyboard in Resources */,
+				25E3C88324AB190A007BC6A1 /* VerticalCell2.xib in Resources */,
+				25E3C87324AB09BD007BC6A1 /* VerticalViewerView3.xib in Resources */,
+				25E3C87824AB0E60007BC6A1 /* VerticalViewerView4.xib in Resources */,
+				252F47A924AA0D78006A3C5B /* VerticalCell.xib in Resources */,
+				25E3C87D24AB103B007BC6A1 /* VerticalViewerView5.xib in Resources */,
+				252F47A324AA0412006A3C5B /* VerticalViewerView1.xib in Resources */,
+				252F476724A9CBFB006A3C5B /* Assets.xcassets in Resources */,
+				25F2B15224AAFE56007D1199 /* VerticalViewerView2.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76181ECB5322C701619B04B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VerticalZoomSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8013B388883DC79EB2CE958 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VerticalZoomSample/Pods-VerticalZoomSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VerticalZoomSample/Pods-VerticalZoomSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VerticalZoomSample/Pods-VerticalZoomSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		252F475624A9CBFA006A3C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				252F479024A9CE9C006A3C5B /* VerticalViewController.swift in Sources */,
+				252F476224A9CBFA006A3C5B /* MainViewController.swift in Sources */,
+				252F47AB24AA0F3C006A3C5B /* BaseCollectionViewCell.swift in Sources */,
+				25E3C89324AB3AD0007BC6A1 /* ZoomCollectionView.swift in Sources */,
+				252F47A124A9E7BE006A3C5B /* UIView+.swift in Sources */,
+				25F2B15124AAFE56007D1199 /* VerticalViewerView2.swift in Sources */,
+				25E3C89124AB3AD0007BC6A1 /* ScalingLayoutProtocol.swift in Sources */,
+				252F479C24A9E2CE006A3C5B /* VerticalViewerView1.swift in Sources */,
+				25E3C89424AB3AD0007BC6A1 /* Extensions.swift in Sources */,
+				252F479F24A9E7B8006A3C5B /* BaseView.swift in Sources */,
+				25E3C89924AB3B28007BC6A1 /* VerticalViewerView7.swift in Sources */,
+				25E3C87924AB0E60007BC6A1 /* VerticalViewerView4.swift in Sources */,
+				25E3C89C24AB3B54007BC6A1 /* CustomLayout.swift in Sources */,
+				25F2B15424AB0679007D1199 /* UIScreen+.swift in Sources */,
+				252F475E24A9CBFA006A3C5B /* AppDelegate.swift in Sources */,
+				25E3C88224AB190A007BC6A1 /* VerticalCell2.swift in Sources */,
+				25E3C87424AB09BD007BC6A1 /* VerticalViewerView3.swift in Sources */,
+				252F476024A9CBFA006A3C5B /* SceneDelegate.swift in Sources */,
+				25E3C89224AB3AD0007BC6A1 /* ScalingGridLayout.swift in Sources */,
+				252F47AD24AA108E006A3C5B /* UICollectionViewCell+.swift in Sources */,
+				25E3C87E24AB103B007BC6A1 /* VerticalViewerView5.swift in Sources */,
+				252F47A824AA0D78006A3C5B /* VerticalCell.swift in Sources */,
+				25E3C88B24AB3276007BC6A1 /* VerticalViewerView6.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		252F476824A9CBFB006A3C5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				252F476924A9CBFB006A3C5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		252F476C24A9CBFB006A3C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		252F476D24A9CBFB006A3C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		252F476F24A9CBFB006A3C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFFAF416F9148E51342DDCE6 /* Pods-VerticalZoomSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UZ2SZ5249W;
+				INFOPLIST_FILE = VerticalZoomSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = domon.VerticalZoomSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		252F477024A9CBFB006A3C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6163C3BC9391261FC9F730 /* Pods-VerticalZoomSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UZ2SZ5249W;
+				INFOPLIST_FILE = VerticalZoomSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = domon.VerticalZoomSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		252F475524A9CBFA006A3C5B /* Build configuration list for PBXProject "VerticalZoomSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				252F476C24A9CBFB006A3C5B /* Debug */,
+				252F476D24A9CBFB006A3C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		252F476E24A9CBFB006A3C5B /* Build configuration list for PBXNativeTarget "VerticalZoomSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				252F476F24A9CBFB006A3C5B /* Debug */,
+				252F477024A9CBFB006A3C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 252F475224A9CBFA006A3C5B /* Project object */;
+}

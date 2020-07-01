@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qKg-F0-B1S">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vertical View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="VerticalViewController" customModule="VerticalZoomSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC" customClass="VerticalViewerView1" customModule="VerticalZoomSample" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DZg-v5-IZE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Deh-Fb-hoW"/>
+                    <connections>
+                        <outlet property="viewerView" destination="8bC-Xf-vdC" id="buy-pr-bEG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893" y="-599"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="6SR-Nu-Nt8">
+            <objects>
+                <viewController id="cG9-3s-8zm" customClass="MainViewController" customModule="VerticalZoomSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EKQ-Nh-mec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tLo-nc-wjW">
+                                <rect key="frame" x="1" y="0.0" width="414" height="775.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5L-wP-FZb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="106.5"/>
+                                        <color key="backgroundColor" red="0.027450980390000001" green="0.72941176470000002" blue="0.77647058820000003" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="pFP-Kv-CR1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvm-3a-PdX">
+                                        <rect key="frame" x="0.0" y="111.5" width="414" height="106.5"/>
+                                        <color key="backgroundColor" red="0.027450980390000001" green="0.72941176470000002" blue="0.77647058820000003" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="nQp-ln-fVv" kind="show" id="UcX-v6-4WC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3ej-sd-394">
+                                        <rect key="frame" x="0.0" y="223" width="414" height="106.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.027450980390000001" green="0.72941176470000002" blue="0.77647058820000003" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="1bU-M8-i5h" kind="show" id="MDL-2R-Qtz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Y7R-wp-mAz" userLabel="4">
+                                        <rect key="frame" x="0.0" y="334.5" width="414" height="106.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.027450980390000001" green="0.72941176470000002" blue="0.77647058820000003" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ZAH-PF-hby" kind="show" id="Jz7-Sg-Raj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x83-0x-U41" userLabel="5">
+                                        <rect key="frame" x="0.0" y="446" width="414" height="106.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.027450980390000001" green="0.72941176470000002" blue="0.77647058820000003" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Gbw-Xh-bhT" kind="show" id="9Cg-g3-lLM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="luS-Xd-dTv" userLabel="6">
+                                        <rect key="frame" x="0.0" y="557.5" width="414" height="106.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.027450980390000001" green="0.72941176470000002" blue="0.77647058820000003" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <state key="normal" title="6">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="dAM-zL-cgb" kind="show" id="wLw-7J-pWY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nQS-yr-JhX">
+                                        <rect key="frame" x="0.0" y="669" width="414" height="106.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.027450980390000001" green="0.72941176470000002" blue="0.77647058820000003" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="16h-yg-aZ9" kind="show" id="y1f-Gs-jah"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PV4-1x-NAM" firstAttribute="bottom" secondItem="tLo-nc-wjW" secondAttribute="bottom" id="XEP-7w-RJz"/>
+                            <constraint firstItem="tLo-nc-wjW" firstAttribute="leading" secondItem="PV4-1x-NAM" secondAttribute="leading" id="pOS-gb-5S1"/>
+                            <constraint firstItem="tLo-nc-wjW" firstAttribute="top" secondItem="PV4-1x-NAM" secondAttribute="top" id="qvG-uU-Ltg"/>
+                            <constraint firstItem="PV4-1x-NAM" firstAttribute="trailing" secondItem="tLo-nc-wjW" secondAttribute="trailing" id="zEd-tD-ika"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PV4-1x-NAM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cfM-R6-cAN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qm1-zU-7lU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39.130434782608695" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rNF-SY-nLw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qKg-F0-B1S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="gW7-fH-kOa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cG9-3s-8zm" kind="relationship" relationship="rootViewController" id="5NA-zn-jf8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iQm-Ph-1iQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-871.01449275362324" y="137.94642857142856"/>
+        </scene>
+        <!--Vertical View Controller-->
+        <scene sceneID="iph-zj-QBq">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nQp-ln-fVv" customClass="VerticalViewController" customModule="VerticalZoomSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oNs-4j-ntS" customClass="VerticalViewerView2" customModule="VerticalZoomSample" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YaB-5E-hMy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IMJ-VT-h3z"/>
+                    <connections>
+                        <outlet property="viewerView" destination="oNs-4j-ntS" id="hte-cX-8EF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJt-BO-IfU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="-599"/>
+        </scene>
+        <!--Vertical View Controller-->
+        <scene sceneID="1LT-i2-Rvg">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1bU-M8-i5h" customClass="VerticalViewController" customModule="VerticalZoomSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6gG-G6-atC" customClass="VerticalViewerView3" customModule="VerticalZoomSample" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="HhI-Vc-bXO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mTT-Kg-TIE"/>
+                    <connections>
+                        <outlet property="viewerView" destination="6gG-G6-atC" id="ZFI-mf-be9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wlG-nd-kPl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2557" y="-397"/>
+        </scene>
+        <!--Vertical View Controller-->
+        <scene sceneID="Ix3-Ny-lrA">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZAH-PF-hby" customClass="VerticalViewController" customModule="VerticalZoomSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SGa-c6-6fA" customClass="VerticalViewerView4" customModule="VerticalZoomSample" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wze-8M-247"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SjH-Pr-wre"/>
+                    <connections>
+                        <outlet property="viewerView" destination="SGa-c6-6fA" id="zF0-Qn-0ay"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Fk-EB-Hpw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3255" y="105"/>
+        </scene>
+        <!--Vertical View Controller-->
+        <scene sceneID="4EG-Ys-9eP">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gbw-Xh-bhT" customClass="VerticalViewController" customModule="VerticalZoomSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wuK-cu-p0j" customClass="VerticalViewerView5" customModule="VerticalZoomSample" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nlM-US-QkJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iXS-1w-Igr"/>
+                    <connections>
+                        <outlet property="viewerView" destination="wuK-cu-p0j" id="igD-6B-Sgx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6oU-Tz-N9N" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2648" y="822"/>
+        </scene>
+        <!--Vertical View Controller-->
+        <scene sceneID="ler-pp-HXo">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dAM-zL-cgb" customClass="VerticalViewController" customModule="VerticalZoomSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gDm-bF-c6p" customClass="VerticalViewerView6" customModule="VerticalZoomSample" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jZl-ao-xqp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6cB-nR-S2s"/>
+                    <connections>
+                        <outlet property="viewerView" destination="gDm-bF-c6p" id="VeQ-Sx-11I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mm9-pG-r1F" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1645" y="1351"/>
+        </scene>
+        <!--Vertical View Controller-->
+        <scene sceneID="O4S-pJ-LhG">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="16h-yg-aZ9" customClass="VerticalViewController" customModule="VerticalZoomSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UB9-BD-cT0" customClass="VerticalViewerView7" customModule="VerticalZoomSample" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aei-6P-1DQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xk6-zc-5Tv"/>
+                    <connections>
+                        <outlet property="viewerView" destination="UB9-BD-cT0" id="huO-0J-MyT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AOC-I9-qV8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="474" y="1351"/>
+        </scene>
+    </scenes>
+</document>
